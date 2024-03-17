@@ -8,6 +8,7 @@ RUN go build -o /hello_go_http
 FROM gcr.io/distroless/base-debian10
 # Set the working directory to the root directory path
 WORKDIR /
+#uighfsiugh
 # Copy over the binary built from the previous stage
 COPY --from=builder /hello_go_http /hello_go_http
 EXPOSE 8080
